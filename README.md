@@ -1,5 +1,3 @@
-# Brain, Action, & Skill Laboratory
-
 The Brain, Action, and Skill (BAS) Laboratory examines how humans control movements and learn motor skills. Our research uses a multidisciplinary combination of non-invasive brain stimulation, neuroimaging, computational modeling, and behavioural experiments.
 Topics of particular interest to the lab include:
 
