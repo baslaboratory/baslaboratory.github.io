@@ -15,3 +15,6 @@ Based in UC Louvain, Belgium, the main office and laboratories of the group are 
 Our past and present research has been made possible by generous funding from several national and international funding agencies:
 
 [images here]
+
+
+link to [Group page](https://baslaboratory.github.io/group.html)
