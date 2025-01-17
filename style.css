@@ -1,5 +1,5 @@
 body {margin:0;
-	font-family: 'Open sans';font-size: 22px;
+	font-family: Arial, sans-serif; 22px;
 	}
 
 
@@ -45,16 +45,12 @@ body {margin:0;
 }
 
 .container {
-  &__image {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-  }
-  &__text {
-    display: inline-block;
-    width: 46%;
-    @media (max-width: 620px) {
-      width: 100%;
-    }
-  }
+
+clear: both;
+
+}
+
+.leftImage  {
+float: left;    
+ margin:  0 15px 15px 0;
 }
