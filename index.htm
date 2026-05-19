@@ -1,55 +1,305 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brain, Action, & Skill Laboratory</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.7;
+    }
+
+    /* Navigation */
+.navbar {
+  background: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #1d4ed8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #374151;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #2563eb;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(
+        rgba(17, 24, 39, 0.75),
+        rgba(17, 24, 39, 0.75)
+      ),
+      url("brain.png");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 10%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
+
+    /* Main Content */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #111827;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 35px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom: 40px;
+    }
+
+    /* Research Topics */
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .topic-box {
+      background: #eef4ff;
+      padding: 25px;
+      border-radius: 14px;
+      transition: transform 0.3s;
+    }
+
+    .topic-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .topic-box h3 {
+      margin-bottom: 10px;
+      color: #1d4ed8;
+    }
+
+    /* Map */
+    .map-container {
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      margin-top: 25px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    /* Funding Logos */
+    .funding {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 30px;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .funding img {
+      width: 100%;
+      max-height: 70px;
+      object-fit: contain;
+      filter: grayscale(100%);
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .funding img:hover {
+      filter: grayscale(0%);
+      opacity: 1;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 30px 10%;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="navbar">
-  
-  <a>Brain, Action, and Skill Laboratory</a>
-  <a href="index.htm" align="right">Home</a>
-  <a href="group.htm">Group</a>
-  <a href="research.htm">Research</a>
-  <a href="methods.htm">Methods</a>
-  <a href="join.htm">Join</a>
-  <a href="publications.htm">Publications</a>
-  <a href="https://sites.google.com/site/baslabinternal">Wiki</a>
-   
-</div>
+  <!-- Navigation -->
+  <div class="navbar">
+    <div class="logo">Brain, Action, and Skill Laboratory</div>
 
-<div class="main">
-	<h1>Home</h1>
+    <div class="nav-links">
+      <a href="index.htm">Home</a>
+      <a href="group.htm">Group</a>
+      <a href="research.htm">Research</a>
+      <a href="methods.htm">Methods</a>
+      <a href="join.htm">Join</a>
+      <a href="publications.htm">Publications</a>
+      <a href="https://sites.google.com/site/baslabinternal">Wiki</a>
+    </div>
+  </div>
 
-	<p>The Brain, Action, and Skill (BAS) Laboratory examines how humans control movements 
-	and learn motor skills. Our research uses a multidisciplinary combination of non-invasive 
-	brain stimulation, neuroimaging, computational modeling, and behavioural experiments.</p>
-  
-	<p>Topics of particular interest to the lab include:<br>
-	- How we learn and automate movements through extensive practice<br>
-	- How imagining actions, and observing the actions of others, affects our movement system<br>
-	- Addressing the adverse effects of ageing and stroke on movement control</p>
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Understanding Human Movement & Learning</h1>
 
-	<p>Based in UC Louvain, Belgium, the main office and laboratories of the group are found in the Cognition and Systems division of the Institute of Neuroscience in Brussels, with additional laboratories and testing space found at the Faculty of Motor Sciences in Louvain-la-Neuve.
+    <p>
+      The Brain, Action, and Skill (BAS) Laboratory study how humans control movements & 
+      acquire motor skills
+    </p>
+  </section>
 
+  <!-- About -->
+  <div class="container">
 
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.87544767207!2d4.451120616253178!3d50.85199067953285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dd8b4c767f57%3A0x46f385fd3c1450ea!2sBAS-lab%20(Brain%2C%20Action%20and%20Skill%20Laboratory%20-%20UCLouvain)!5e0!3m2!1sen!2sbe!4v1626619937929!5m2!1sen!2sbe" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="600"></iframe>
+    <div class="card">
+      <h2 class="section-title">About the Lab</h2>
 
-	<p>Our past and present work has been made possible by generous funding from several national and international agencies:</p>
+      <p>
+        Our research uses a multidisciplinary combination of non-invasive brain stimulation,
+        neuroimaging, computational modeling, and behavioural experiments to understand
+        motor learning and movement control.
+      </p>
 
-<div width=100% align="center">
-<img src="images/funds_fnrs.png" height=16%, width=16%>
-<img src="images/funds_UCLouvain.png" height=16%, width=16%>
-<img src="images/funds_MarieCurie.png" height=16%, width=16%>
-<img src="images/funds_erasmus.png" height=16%, width=16%>
-<img src="images/funds_EPS.png" height=16%, width=16%>
-<img src="images/funds_NCM.jpg" height=16%, width=16%>
-</div>
+      <div class="topics">
 
+        <div class="topic-box">
+          <h3>Motor Skill Learning</h3>
+          <p>
+            Investigating how humans learn and automate movements through extensive practice.
+          </p>
+        </div>
 
-</div>
+        <div class="topic-box">
+          <h3>Action Simulation</h3>
+          <p>
+            Understanding how imagining actions and observing others affects the movement system.
+          </p>
+        </div>
+
+        <div class="topic-box">
+          <h3>Ageing & Stroke</h3>
+          <p>
+            Addressing adverse effects of ageing and stroke on movement control and recovery.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Location -->
+    <div class="card">
+      <h2 class="section-title">Our Location</h2>
+
+      <p>
+        Based in UC Louvain, Belgium, the BAS Laboratory is part of the Cognition and Systems
+        division of the Institute of Neuroscience in Brussels, with additional facilities in
+        Louvain-la-Neuve.
+      </p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.87544767207!2d4.451120616253178!3d50.85199067953285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3dd8b4c767f57%3A0x46f385fd3c1450ea!2sBAS-lab%20(Brain%2C%20Action%20and%20Skill%20Laboratory%20-%20UCLouvain)!5e0!3m2!1sen!2sbe!4v1626619937929!5m2!1sen!2sbe"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Funding -->
+    <div class="card">
+      <h2 class="section-title">Funding & Support</h2>
+
+      <p style="text-align:center;">
+        Our research has been supported by several national and international agencies.
+      </p>
+
+      <div class="funding">
+        <img src="images/funds_fnrs.png" alt="FNRS">
+        <img src="images/funds_UCLouvain.png" alt="UCLouvain">
+        <img src="images/funds_MarieCurie.png" alt="Marie Curie">
+        <img src="images/funds_erasmus.png" alt="Erasmus">
+        <img src="images/funds_EPS.png" alt="EPS">
+        <img src="images/funds_NCM.jpg" alt="NCM">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Brain, Action, and Skill Laboratory · UC Louvain · Brussels, Belgium
+  </footer>
 
 </body>
 </html>
